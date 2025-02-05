@@ -1,0 +1,865 @@
+{
+	"name": "Список событий 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "сколькоСоздавать",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 175649765191295
+		},
+		{
+			"eventType": "variable",
+			"name": "Избранное_фильтр",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 514864592971029
+		},
+		{
+			"eventType": "variable",
+			"name": "ЧБ_режим",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 179578433062474
+		},
+		{
+			"eventType": "variable",
+			"name": "id_notes_counter",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 851515801977410
+		},
+		{
+			"eventType": "variable",
+			"name": "Scroll",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 584349573889563
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "main_notes",
+					"sid": 678235240077694,
+					"parameters": {
+						"instance-variable": "цвет",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "main_notes",
+					"sid": 107061810382260,
+					"parameters": {
+						"color": "rgba(100, 0, 0, 255)"
+					}
+				}
+			],
+			"sid": 473470964415541
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "main_notes",
+					"sid": 513060923059767,
+					"parameters": {
+						"instance-variable": "цвет",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "main_notes",
+					"sid": 112808815141895,
+					"parameters": {
+						"color": "rgba(100, 100, 0, 255)"
+					}
+				}
+			],
+			"sid": 700215321579080
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "main_notes",
+					"sid": 811137969149233,
+					"parameters": {
+						"instance-variable": "цвет",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "main_notes",
+					"sid": 490316802726378,
+					"parameters": {
+						"color": "rgba(100, 100, 100, 255)"
+					}
+				}
+			],
+			"sid": 479134508582229
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "main_notes",
+					"sid": 852508348465899,
+					"parameters": {
+						"instance-variable": "цвет",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "main_notes",
+					"sid": 284544358346327,
+					"parameters": {
+						"color": "rgba(20, 100, 100, 255)"
+					}
+				}
+			],
+			"sid": 715786632473989
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "main_notes",
+					"sid": 984024791555444,
+					"parameters": {
+						"instance-variable": "цвет",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-default-color",
+					"objectClass": "main_notes",
+					"sid": 884896926554043,
+					"parameters": {
+						"color": "rgba(20, 20, 100, 255)"
+					}
+				}
+			],
+			"sid": 910821649467184
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 661880381808094
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 333855091678571,
+					"parameters": {
+						"variable": "сколькоСоздавать",
+						"value": "int(random(3,100))"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 622550942793342,
+					"parameters": {
+						"variable": "Scroll",
+						"value": "сколькоСоздавать"
+					}
+				}
+			],
+			"sid": 115666812733587,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "repeat",
+							"objectClass": "System",
+							"sid": 294079222614293,
+							"parameters": {
+								"count": "сколькоСоздавать"
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "создание",
+							"sid": 354771974180937
+						}
+					],
+					"sid": 320828520102853
+				}
+			]
+		},
+		{
+			"functionName": "создание",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 976073232451017,
+					"parameters": {
+						"object-to-create": "main_notes",
+						"layer": "0",
+						"x": "random(85,179)",
+						"y": "random(80,545)",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "main_notes",
+					"sid": 108768405741095,
+					"parameters": {
+						"object": "text_notes",
+						"layer": "0",
+						"image-point": "1",
+						"create-hierarchy": true,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "text_notes",
+					"sid": 501928844062152,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "main_notes",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": true
+					}
+				},
+				{
+					"id": "set-destroy",
+					"objectClass": "text_notes",
+					"sid": 762304034465450,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"destroy": true
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "text_notes",
+					"sid": 549996034777710,
+					"parameters": {
+						"instance-variable": "id",
+						"value": "main_notes.id"
+					}
+				},
+				{
+					"id": "add-child",
+					"objectClass": "main_notes",
+					"sid": 537528381876819,
+					"parameters": {
+						"child": "text_notes",
+						"transform-x": true,
+						"transform-y": true,
+						"transform-w": true,
+						"transform-h": true,
+						"transform-a": true,
+						"transform-o": true,
+						"transform-z-elevation": true,
+						"transform-visibility": true,
+						"destroy-with-parent": true
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "main_notes",
+					"sid": 885638207785605,
+					"parameters": {
+						"object": "like_icon",
+						"layer": "0",
+						"image-point": "2",
+						"create-hierarchy": true,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "like_icon",
+					"sid": 235531564333423,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"pin-to": "main_notes",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": true
+					}
+				},
+				{
+					"id": "set-destroy",
+					"objectClass": "like_icon",
+					"sid": 206678961194209,
+					"behaviorType": "Прикрепить",
+					"parameters": {
+						"destroy": true
+					}
+				},
+				{
+					"id": "add-child",
+					"objectClass": "main_notes",
+					"sid": 365082045402269,
+					"parameters": {
+						"child": "like_icon",
+						"transform-x": true,
+						"transform-y": true,
+						"transform-w": true,
+						"transform-h": true,
+						"transform-a": true,
+						"transform-o": true,
+						"transform-z-elevation": true,
+						"transform-visibility": true,
+						"destroy-with-parent": true
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "like_icon",
+					"sid": 406466629436608,
+					"parameters": {
+						"instance-variable": "id",
+						"value": "main_notes.id"
+					}
+				}
+			],
+			"sid": 246112477581909
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-created",
+					"objectClass": "main_notes",
+					"sid": 105735722958848
+				}
+			],
+			"actions": [
+				{
+					"id": "set-instvar-value",
+					"objectClass": "main_notes",
+					"sid": 892578776439778,
+					"parameters": {
+						"instance-variable": "цвет",
+						"value": "int(random(0,6))"
+					}
+				},
+				{
+					"id": "set-instvar-value",
+					"objectClass": "main_notes",
+					"sid": 353287163185016,
+					"parameters": {
+						"instance-variable": "id",
+						"value": "id_notes_counter"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 608673655537761,
+					"parameters": {
+						"variable": "id_notes_counter",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 603137773755124
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Тач",
+					"sid": 906590903556927,
+					"parameters": {
+						"object": "Избраное_фильтр"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "toggle-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 836539612685984,
+					"parameters": {
+						"variable": "Избранное_фильтр"
+					}
+				}
+			],
+			"sid": 294834254920062,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 250218565505668,
+					"parameters": {
+						"variable": "Избранное_фильтр"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Избраное_фильтр",
+					"sid": 187373910742209,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 495312755340992
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 288968761143264,
+					"parameters": {
+						"variable": "Избранное_фильтр"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Избраное_фильтр",
+					"sid": 998777559747436,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 863215344347547
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Тач",
+					"sid": 620158906608187,
+					"parameters": {
+						"object": "чб_фильтр"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "toggle-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 289175777963508,
+					"parameters": {
+						"variable": "ЧБ_режим"
+					}
+				}
+			],
+			"sid": 814137993562850,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 399270781040301,
+					"parameters": {
+						"variable": "ЧБ_режим"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-effect-enabled",
+					"objectClass": "System",
+					"sid": 640170063052776,
+					"parameters": {
+						"layer": "0",
+						"mode": "enable",
+						"effect": "\"ОттенкиСерого\""
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "чб_фильтр",
+					"sid": 964554947511228,
+					"parameters": {
+						"frame-number": "1"
+					}
+				}
+			],
+			"sid": 783287135960294
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 504886104240325,
+					"parameters": {
+						"variable": "ЧБ_режим"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-effect-enabled",
+					"objectClass": "System",
+					"sid": 358107524516339,
+					"parameters": {
+						"layer": "0",
+						"mode": "disable",
+						"effect": "\"ОттенкиСерого\""
+					}
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "чб_фильтр",
+					"sid": 293084850844222,
+					"parameters": {
+						"frame-number": "0"
+					}
+				}
+			],
+			"sid": 590170024935172
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "main_notes",
+					"sid": 336572134704994,
+					"parameters": {
+						"instance-variable": "id",
+						"comparison": 0,
+						"value": "Scroll"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "main_notes",
+					"sid": 542603828615960
+				}
+			],
+			"sid": 584229348891341
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "text_notes",
+					"sid": 803632184864378,
+					"parameters": {
+						"instance-variable": "id",
+						"comparison": 0,
+						"value": "Scroll"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "text_notes",
+					"sid": 415684517182413
+				}
+			],
+			"sid": 247295267221283
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-instance-variable",
+					"objectClass": "like_icon",
+					"sid": 603065630395692,
+					"parameters": {
+						"instance-variable": "id",
+						"comparison": 0,
+						"value": "Scroll"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-to-top",
+					"objectClass": "like_icon",
+					"sid": 864632017052913
+				}
+			],
+			"sid": 169905127521573
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 547351220346733
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "тест_id_заметки",
+					"sid": 110165512952361,
+					"parameters": {
+						"text": "Scroll & \"/\" & сколькоСоздавать "
+					}
+				},
+				{
+					"id": "move-to-top",
+					"objectClass": "Спрайт",
+					"sid": 912105630578614
+				}
+			],
+			"sid": 776978144790942
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-mouse-wheel",
+					"objectClass": "Мышь",
+					"sid": 928430222126111,
+					"parameters": {
+						"direction": "up"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 947272374561995,
+					"parameters": {
+						"variable": "Scroll",
+						"value": "1"
+					}
+				},
+				{
+					"id": "vibrate",
+					"objectClass": "Браузер",
+					"sid": 721993073458325,
+					"parameters": {
+						"pattern": "\"200,100,200\""
+					}
+				}
+			],
+			"sid": 488662188965330
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-mouse-wheel",
+					"objectClass": "Мышь",
+					"sid": 443201843150556,
+					"parameters": {
+						"direction": "down"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 580984477851330,
+					"parameters": {
+						"variable": "Scroll",
+						"value": "1"
+					}
+				},
+				{
+					"id": "vibrate",
+					"objectClass": "Браузер",
+					"sid": 201110465332404,
+					"parameters": {
+						"pattern": "\"200,100,200\""
+					}
+				}
+			],
+			"sid": 719027618647227
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-in-touch",
+					"objectClass": "Тач",
+					"sid": 668700333468856
+				}
+			],
+			"actions": [],
+			"sid": 209334354812756,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 114921420062818,
+							"parameters": {
+								"first-value": "Тач.AngleAt(0)",
+								"comparison": 4,
+								"second-value": "0"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 781203985782798,
+							"parameters": {
+								"interval-seconds": "0.05"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "subtract-from-eventvar",
+							"objectClass": "System",
+							"sid": 359183520692772,
+							"parameters": {
+								"variable": "Scroll",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 308400176847291
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 212222770289148,
+							"parameters": {
+								"first-value": "Тач.AngleAt(0)",
+								"comparison": 2,
+								"second-value": "0"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 555816807694444,
+							"parameters": {
+								"interval-seconds": "0.05"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 372478054514438,
+							"parameters": {
+								"variable": "Scroll",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 139493617096091
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap",
+					"objectClass": "Тач",
+					"sid": 705680391460743
+				}
+			],
+			"actions": [
+				{
+					"id": "request-fullscreen",
+					"objectClass": "Браузер",
+					"sid": 827684823625697,
+					"parameters": {
+						"mode": "stretch-letterbox-scale",
+						"navigation-ui": "auto"
+					}
+				}
+			],
+			"sid": 627689751966782
+		}
+	],
+	"sid": 301460191994671
+}

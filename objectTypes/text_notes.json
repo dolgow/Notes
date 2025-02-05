@@ -1,0 +1,24 @@
+{
+	"name": "text_notes",
+	"plugin-id": "Text",
+	"sid": 906830695005625,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "id",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 489001418104452
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Pin",
+			"name": "Прикрепить",
+			"sid": 912456226549022
+		}
+	],
+	"effectTypes": []
+}

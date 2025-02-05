@@ -1,0 +1,67 @@
+{
+	"name": "main_notes",
+	"plugin-id": "Sprite",
+	"sid": 411018393005724,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "цвет",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 267345143659149
+		},
+		{
+			"name": "id",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 707360386444242
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 250,
+						"height": 350,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 36297,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Точка спрайта 1",
+								"x": 0.04,
+								"y": 0.02857142857142857
+							},
+							{
+								"name": "Точка спрайта 2",
+								"x": 0.96,
+								"y": 0.9714285714285714
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 281891074110132,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

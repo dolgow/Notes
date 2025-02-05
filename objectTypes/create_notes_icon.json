@@ -1,0 +1,52 @@
+{
+	"name": "create_notes_icon",
+	"plugin-id": "Sprite",
+	"sid": 587039993318462,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 412,
+						"height": 400,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1853944,
+						"collisionPoly": {
+							"points": [
+								0.0036407766990291263,
+								0.0525,
+								0.9963592233009708,
+								0.0525,
+								0.9963592233009708,
+								0.9475,
+								0.0036407766990291263,
+								0.9475
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 453145023392331,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"name": "Текст",
+	"plugin-id": "Text",
+	"sid": 233545374995692,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Синусоида",
+			"sid": 125707359140632
+		}
+	],
+	"effectTypes": []
+}

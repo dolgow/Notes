@@ -1,0 +1,19 @@
+{
+	"name": "FamZ",
+	"plugin-id": "Sprite",
+	"sid": 269080256952645,
+	"instanceVariables": [
+		{
+			"name": "order",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 525527333641434
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"main_notes"
+	]
+}
